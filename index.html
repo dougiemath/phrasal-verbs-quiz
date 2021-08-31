@@ -11,7 +11,7 @@
 <!-- div for header -->
 
 <header>
-    <div class="site-header">
+    <div class="site-header container">
         <div class="site-logo"><img src="assets/images/banner.png" id="banner"></div>
         <div class="site-title">
             <h1 id="banner-title-text">Phrasal Verbs with 'DOWN'</h1>
@@ -19,6 +19,16 @@
     </div>
 </header>
 
+<!-- div for username input -->
+<div class="username-container container" id="username-container">
+    <div class="enter-username">
+        <label id="username-label" for="username-input">Please enter a user name: </label>
+        <div class="username-break"><br></div>
+        <input id="username-input" type="text" name="username" placeholder="Type here" required>
+        <br>
+        <input id="username-submit" class="navigation-buttons" type="submit" onclick="displayStartMessage()">
+    </div>
+</div>    
 <!-- div for welcome message + language point -->
 <!-- div for reading passage -->
 <!-- div for questions -->

@@ -11,10 +11,7 @@ body{
     background-color: rgb(184,119,169);
 }
 
-.site-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.container{
     align-items: center;
     margin-top: 1.5%;
     width: 80%;
@@ -26,6 +23,13 @@ body{
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+.site-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 
 .site-logo{
     text-align: center;
