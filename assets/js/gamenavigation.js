@@ -1,1 +1,1 @@
-console.log("the navigation js")
+// functions to hide + display divs
