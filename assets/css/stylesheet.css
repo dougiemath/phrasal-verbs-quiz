@@ -150,3 +150,17 @@ hr{
     margin-left: auto;
     margin-right: auto;
 }
+
+#reading-text{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.exercise-instructions{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Lato, sans-serif;
+    color: rgb(12,173,149);
+    margin-bottom: 2%;
+    text-align: center;
+}
