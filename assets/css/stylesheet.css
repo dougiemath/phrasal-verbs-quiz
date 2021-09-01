@@ -209,3 +209,13 @@ hr{
     margin-right: auto;
 
 }
+
+
+/*Element IDs for JS Functions*/
+#username-container{
+    display: block;
+}
+
+#language-point-container{
+    display: block;
+}

@@ -26,11 +26,11 @@
         <div class="username-break"><br></div>
         <input id="username-input" type="text" name="username" placeholder="Type here" required>
         <br>
-        <input id="username-submit" class="navigation-buttons" type="submit" onclick="displayStartMessage()">
+        <input id="username-submit" class="navigation-buttons" type="submit" onclick="hideUsername()">
     </div>
 </div>    
 <!-- div for welcome message + language point -->
-<div class="language-point-container container" id="language-point-container">
+<div class= "container" id="language-point-container">
     <h2 id= "instructions-message"></h2>
     <hr>
     <div class="language-points" id = "language-points">
@@ -57,7 +57,7 @@
     <hr>
     <p id="ready-message"></p>
     <div class="start-button-div">
-        <button class="navigation-buttons" id="start-button" onclick="startGame()">Start Quiz!!</button>
+        <button class="navigation-buttons" id="start-button" onclick="startGame(); hideLanguageContainer()">Start Quiz!!</button>
     </div>
 </div>
 <!-- div for reading passage -->
