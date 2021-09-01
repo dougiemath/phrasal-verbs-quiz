@@ -1,8 +1,41 @@
-// variables
+let answers = Array.from(document.getElementsByClassName("answer"))
+let currentQuestion;
+let score;
+let remainingQuestions;
 
-// question list (array)
+/**
+ * question list (array)
+ */
 
-// function to get username
+let questionList = [{
+    question: "1.	Who was shouted down? ",
+    choices: ["Lucas", "Heidi", "Harry", "Mia"],
+    correctAnswer: "Heidi",
+},
+{
+    question: "2.	Who was gunned down? ",
+    choices: ["Lucas", "Mia", "Oliver", "Harry"],
+    correctAnswer: "Lucas"
+},
+{
+    question: "3.	Who felt tied down? ",
+    choices: ["Oliver", "Harry", "Mia", "Lucas"],
+    correctAnswer: "Harry"
+},
+{
+    question: "4.	Who was pinned down? ",
+    choices: ["Mia", "Harry", "Lucas", "Oliver"],
+    correctAnswer: "Oliver"
+},
+{
+    question: "5.	Who managed to knock someone down?",
+    choices: ["Harry", "Lucas", "Mia", "Oliver"],
+    correctAnswer: "Mia"
+},
+]
+/**
+ * function to get username
+ */
 
 function addUsername(){
     let usernameInput = document.getElementById("username-input").value
@@ -11,8 +44,11 @@ function addUsername(){
 
 // function to startGame
 
-function startGame(){
-    console.log("start game function")
+function startGame() {
+    score = 0;
+    currentQuestion = -1
+    callQuestions();
+    remainingQuestions = questionList.length
 }
 
 //function to display start message
@@ -24,6 +60,19 @@ function displayStartMessage() {
 }
 
 // function to call questions
+
+function callQuestions() {
+    currentQuestion = currentQuestion + 1;
+    if (currentQuestion >= questionList.length) {
+        alert("All the questions are done");
+        return;
+    }
+    document.getElementById("quiz-questions").innerHTML = questionList[currentQuestion].question;
+    document.getElementById("button-a").innerHTML = questionList[currentQuestion].choices[0];
+    document.getElementById("button-b").innerHTML = questionList[currentQuestion].choices[1];
+    document.getElementById("button-c").innerHTML = questionList[currentQuestion].choices[2];
+    document.getElementById("button-d").innerHTML = questionList[currentQuestion].choices[3];
+}
 
 // function to check answers
 
