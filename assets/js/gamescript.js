@@ -42,21 +42,37 @@ function addUsername(){
     console.log(usernameInput);
 }
 
-// function to startGame
-
-function startGame() {
-    score = 0;
-    currentQuestion = -1
-    callQuestions();
-    remainingQuestions = questionList.length
-}
-
 //function to display start message
 
 function displayStartMessage() {
     let username = document.getElementById("username-input").value;
     document.getElementById("instructions-message").textContent = "Hi " + username + ", before you start the exercise, please read the langauge point below."
     document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!"
+}
+
+// function to startGame
+
+function startGame() {
+    score = 0;
+    currentQuestion = -1
+    callQuestions();
+    remainingQuestions = questionList.length;
+}
+
+// function to check answers
+
+checkAnswer()
+
+function checkAnswer() {
+
+    answers.forEach(answer => {
+        answer.addEventListener("click", event => {
+            console.log(event.target.innerText)
+            callQuestions()
+            remainingQuestions--
+            console.log("questions remaining = " + remainingQuestions)
+        })
+    })
 }
 
 // function to call questions
@@ -73,8 +89,6 @@ function callQuestions() {
     document.getElementById("button-c").innerHTML = questionList[currentQuestion].choices[2];
     document.getElementById("button-d").innerHTML = questionList[currentQuestion].choices[3];
 }
-
-// function to check answers
 
 // function to display feedback
 
