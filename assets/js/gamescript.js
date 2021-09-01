@@ -84,6 +84,8 @@ function checkAnswer() {
 
             console.log("questions remaining = " + remainingQuestions)
 
+            let username = document.getElementById("username-input").value;
+            document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length
 
         })
     })
@@ -94,10 +96,28 @@ function checkAnswer() {
 function callQuestions() {
     currentQuestion = currentQuestion + 1;
     if (currentQuestion >= questionList.length) {
+        alert("All the questions are done");
         displayFeedbackContainer();
         hideQuestionContainer()
+        dispalyFinalImage()
         return;
     }
+
+    function dispalyFinalImage() {
+        let imageZero = document.getElementById("feedback-image-zero-marks");
+        let fullMarksImage = document.getElementById("feedback-image-full-marks")
+        let notBadImage = document.getElementById("feedback-image-not-bad")
+
+        if (score <= 2) {
+            imageZero.style.display = "block";
+        } else if (score <= 4) {
+            notBadImage.style.display = "block";
+        } else {
+            fullMarksImage.style.display = "block";
+        }
+
+    }
+
     document.getElementById("quiz-questions").innerHTML = questionList[currentQuestion].question;
     document.getElementById("button-a").innerHTML = questionList[currentQuestion].choices[0];
     document.getElementById("button-b").innerHTML = questionList[currentQuestion].choices[1];
@@ -105,6 +125,5 @@ function callQuestions() {
     document.getElementById("button-d").innerHTML = questionList[currentQuestion].choices[3];
 }
 
-// function to display feedback
 
 

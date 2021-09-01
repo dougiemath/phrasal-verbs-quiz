@@ -52,13 +52,16 @@ function displayFeedbackContainer(){
 }
 
 /**
- * hides the question container div
+ * hides the question container and the reading container div
  */
 
 function hideQuestionContainer(){
     let questionContainer = document.getElementById("question-container")
+    let readingContainer = document.getElementById("reading-container");
+
         if (questionContainer.style.display = "block"){
         questionContainer.style.display = "none";
+        readingContainer.style.display = "none";
         }
 }
 

@@ -266,3 +266,15 @@ hr{
 #answers-container{
     display: none;
 }
+
+#feedback-image-zero-marks{
+    display: none;
+}
+
+#feedback-image-full-marks{
+    display: none;
+}
+
+#feedback-image-not-bad{
+    display: none;
+}
