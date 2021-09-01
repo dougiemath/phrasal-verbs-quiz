@@ -54,7 +54,7 @@ function displayStartMessage() {
 
 function startGame() {
     score = 0;
-    currentQuestion = -1
+    currentQuestion = -1;
     callQuestions();
     remainingQuestions = questionList.length;
 }
@@ -63,6 +63,37 @@ function startGame() {
 
 checkAnswer()
 
+function checkAnswer() {
+
+    answers.forEach(answer => {
+        answer.addEventListener("click", event => {
+            console.log(event.target.innerText)
+            let selection = event.target.innerText;
+
+            if (selection === questionList[currentQuestion].correctAnswer) {
+                score++
+            } else {
+                score + 0
+            }
+            //calculate running score
+            document.getElementById("running-score").innerHTML = "Current Score <br>=   " + score + "/5";
+
+            //calls the next question
+            callQuestions()
+
+            //calculate remaining questions
+            remainingQuestions--
+            document.getElementById("remaining-questions").innerHTML = "Qestions remaining <br>=  " + remainingQuestions + "/5";
+
+            //displays final score on ';'final score' container
+            let username = document.getElementById("username-input").value;
+            document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length
+
+        })
+
+    })
+}
+/** 
 function checkAnswer() {
 
     answers.forEach(answer => {
@@ -90,7 +121,7 @@ function checkAnswer() {
         })
     })
 }
-
+*/
 // function to call questions
 
 function callQuestions() {
