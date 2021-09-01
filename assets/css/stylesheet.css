@@ -201,6 +201,32 @@ hr{
     color: white;
 }
 
+/*score and progress counter*/
+
+.score-and-progress-counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.current-score{
+    width: 100%;
+}
+.questions-remaining{
+    width: 100%;
+}
+
+.running-totals{
+    width: 99%;
+    border-radius: 5px;
+    margin-top: 5%;
+    color: rgb(184,119,169);
+    border:solid 0.5px rgb(184,119,169);
+    background-color: white;
+    text-align: center;
+}
+
 /*Answer section*/
 
 .answer-descriptions{
