@@ -164,3 +164,24 @@ hr{
     margin-bottom: 2%;
     text-align: center;
 }
+
+/*question container*/
+
+.buttons{
+    width: 100%;
+    text-align: left;
+    height: 2.5rem;
+    padding-left: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    color: rgb(184,119,169);
+    border:solid 0.5px rgb(184,119,169);
+    background-color: white;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    border:solid 0.5px  rgb(12,173,149);
+    background-color:  rgb(12,173,149);
+    color: white;
+}
