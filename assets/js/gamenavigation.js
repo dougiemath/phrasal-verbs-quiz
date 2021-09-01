@@ -1,3 +1,12 @@
+/**
+ * Places the fcous on the user-input box
+ */
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    let submitButton = document.getElementById("username-submit")
+    if(submitButton.style.display = "none");
+        submitButton.style.display = "block"
+});
 
 /**
  * Places the fcous on the user-input box
