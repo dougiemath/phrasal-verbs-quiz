@@ -207,7 +207,12 @@ hr{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
 
+.restart-quiz-button-box{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 
