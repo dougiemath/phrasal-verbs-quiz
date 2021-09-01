@@ -75,11 +75,16 @@ function checkAnswer() {
             if (selection === questionList[currentQuestion].correctAnswer) {
                 score++
             } 
-            
+
             document.getElementById("running-score").innerHTML = "Current Score <br>=   " + score + "/5";
 
             remainingQuestions--
+
+            document.getElementById("remaining-questions").innerHTML = "Questions remaining <br> = " + remainingQuestions + "/5"
+
             console.log("questions remaining = " + remainingQuestions)
+
+
         })
     })
 }
@@ -90,6 +95,7 @@ function callQuestions() {
     currentQuestion = currentQuestion + 1;
     if (currentQuestion >= questionList.length) {
         alert("All the questions are done");
+        displayFeedbackContainer();
         return;
     }
     document.getElementById("quiz-questions").innerHTML = questionList[currentQuestion].question;

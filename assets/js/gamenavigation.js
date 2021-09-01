@@ -28,3 +28,11 @@ function hideUsername(){
 }
 
 
+/**
+ * displays the feedback div
+ */
+function displayFeedbackContainer(){
+    let feedbackContainer = document.getElementById("feedback-container");
+    if (feedbackContainer.style.display = "none");
+        feedbackContainer.style.display = "block"
+}

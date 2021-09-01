@@ -250,3 +250,7 @@ hr{
 #language-point-container{
     display: block;
 }
+
+#feedback-container{
+    display:none;
+}
