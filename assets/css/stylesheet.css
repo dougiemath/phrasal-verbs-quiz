@@ -251,6 +251,18 @@ hr{
     display: none;
 }
 
+#reading-container{
+    display: none;
+}
+
+#question-container{
+    display: none;
+}
+
 #feedback-container{
-    display:none;
+    display: none;
+}
+
+#answers-container{
+    display: none;
 }

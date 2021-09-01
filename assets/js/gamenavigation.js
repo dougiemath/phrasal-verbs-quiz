@@ -12,8 +12,9 @@
 function hideUsername(){
     let usernameContainer = document.getElementById("username-container")
 
-    if (usernameContainer.style.display = "block")
+    if (usernameContainer.style.display = "block"){
         usernameContainer.style.display = "none"
+    }
 }
 
 /**
@@ -22,8 +23,9 @@ function hideUsername(){
 
 function displayLangaugePoint(){
     let languagePointContainer = document.getElementById("language-point-container")
-    if(languagePointContainer.style.display = "none");
+    if(languagePointContainer.style.display = "none"){
     languagePointContainer.style.display = "block"
+    }
 }
 
 /**
@@ -33,8 +35,9 @@ function displayLangaugePoint(){
  function hideLanguageContainer(){
     let languageContainer = document.getElementById("language-point-container")
 
-    if (languageContainer.style.display = "block")
+    if (languageContainer.style.display = "block"){
     languageContainer.style.display = "none"
+    }
 }
 
 /**
@@ -43,8 +46,9 @@ function displayLangaugePoint(){
 
 function displayFeedbackContainer(){
     let feedbackContainer = document.getElementById("feedback-container");
-    if (feedbackContainer.style.display = "none");
+    if (feedbackContainer.style.display = "none"){
         feedbackContainer.style.display = "block"
+    }
 }
 
 /**
@@ -53,6 +57,22 @@ function displayFeedbackContainer(){
 
 function hideQuestionContainer(){
     let questionContainer = document.getElementById("question-container")
-        if (questionContainer.style.display = "block");
+        if (questionContainer.style.display = "block"){
         questionContainer.style.display = "none";
+        }
+}
+
+/**
+ * Displays the question and reading containers
+ */
+
+function displayExercise(){
+let readingContainer = document.getElementById("reading-container");
+let questionContainer = document.getElementById("question-container");
+
+if (readingContainer.style.display = "none"){
+    readingContainer.style.display = "block";
+    questionContainer.style.display = "block"
+}
+
 }

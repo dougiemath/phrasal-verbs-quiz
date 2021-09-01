@@ -57,12 +57,12 @@
     <hr>
     <p id="ready-message"></p>
     <div class="start-button-div">
-        <button class="navigation-buttons" id="start-button" onclick="startGame(); hideLanguageContainer()">Start Quiz!!</button>
+        <button class="navigation-buttons" id="start-button" onclick="startGame(); hideLanguageContainer(); displayExercise()">Start Quiz!!</button>
     </div>
 </div>
 <!-- div for reading passage -->
 
-<div class="container">
+<div class="container" id = "reading-container">
     <h2 class="exercise-instructions">Read the paragraph and answer the questions below.</h2>
     <h3 class="exercise-instructions">You only have one chance per answer.</h3>
     <hr>
@@ -112,7 +112,7 @@
 
 <!-- div for answers -->
 
-<div class="container">
+<div class="container" id = "answers-container">
     <div class="answer-descriptions">
         <h2 class=exercise-instructions>Answers</h2>
         <hr>
