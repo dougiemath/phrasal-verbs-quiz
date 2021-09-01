@@ -34,13 +34,16 @@ let questionList = [{
 },
 ]
 /**
- * function to get username
+ * Function to start game on pressing Enter at usersubmit screen
  */
 
-function addUsername(){
-    let usernameInput = document.getElementById("username-input").value
-    console.log(usernameInput);
-}
+ document.getElementById("username-input").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        displayStartMessage();
+        hideUsername(); 
+        displayLangaugePoint();
+    }
+});
 
 //function to display start message
 
@@ -93,35 +96,7 @@ function checkAnswer() {
 
     })
 }
-/** 
-function checkAnswer() {
 
-    answers.forEach(answer => {
-        answer.addEventListener("click", event => {
-            console.log(event.target.innerText)
-            callQuestions()
-
-            let selection = event.target.innerText;
-
-            if (selection === questionList[currentQuestion].correctAnswer) {
-                score++
-            } 
-
-            document.getElementById("running-score").innerHTML = "Current Score <br>=   " + score + "/5";
-
-            remainingQuestions--
-
-            document.getElementById("remaining-questions").innerHTML = "Questions remaining <br> = " + remainingQuestions + "/5"
-
-            console.log("questions remaining = " + remainingQuestions)
-
-            let username = document.getElementById("username-input").value;
-            document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length
-
-        })
-    })
-}
-*/
 // function to call questions
 
 function callQuestions() {
