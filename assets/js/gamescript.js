@@ -96,10 +96,9 @@ function checkAnswer() {
 function callQuestions() {
     currentQuestion = currentQuestion + 1;
     if (currentQuestion >= questionList.length) {
-        alert("All the questions are done");
         displayFeedbackContainer();
-        hideQuestionContainer()
-        dispalyFinalImage()
+        hideQuestionContainer();
+        dispalyFinalImage();
         return;
     }
 
