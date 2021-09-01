@@ -248,7 +248,7 @@ hr{
 }
 
 #language-point-container{
-    display: block;
+    display: none;
 }
 
 #feedback-container{

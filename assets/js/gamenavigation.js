@@ -17,6 +17,16 @@ function hideUsername(){
 }
 
 /**
+ * Displays the language point div
+*/
+
+function displayLangaugePoint(){
+    let languagePointContainer = document.getElementById("language-point-container")
+    if(languagePointContainer.style.display = "none");
+    languagePointContainer.style.display = "block"
+}
+
+/**
  * Hides the language point div
  *  */
 
