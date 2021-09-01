@@ -200,3 +200,12 @@ hr{
     background-color:  rgb(12,173,149);
     color: white;
 }
+
+/*Answer section*/
+
+.answer-descriptions{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}

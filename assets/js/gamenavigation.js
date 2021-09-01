@@ -1,6 +1,6 @@
 
-// function to display welcome/start message
+/**
+ * Places the fcous on the user-input box
+ *  */
 
-function displayStartMessage(){
-    console.log("test button working")
-}
+ document.getElementById("username-input").focus()
