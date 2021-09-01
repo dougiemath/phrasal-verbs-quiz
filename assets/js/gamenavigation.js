@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 /**
  * Places the fcous on the user-input box
- *  */
+ **/
 
  document.getElementById("username-input").focus()
 

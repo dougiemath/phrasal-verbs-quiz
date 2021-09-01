@@ -258,6 +258,25 @@ hr{
     margin-right: auto;
 }
 
+.restart-and-answers-box{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.restart-quiz-button-box{
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show-answers{
+    width: 100%;
+}
+
 /*Element IDs for JS Functions*/
 #username-container{
     display: block;
