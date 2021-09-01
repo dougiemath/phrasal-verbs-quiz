@@ -241,6 +241,22 @@ hr{
     text-align: center;
 }
 
+/*Feedback container*/
+
+.final-score{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Lato, sans-serif;
+    color: rgb(12,173,149);
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+.feedbackImage{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Element IDs for JS Functions*/
 #username-container{
