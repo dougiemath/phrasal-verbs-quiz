@@ -69,6 +69,15 @@ function checkAnswer() {
         answer.addEventListener("click", event => {
             console.log(event.target.innerText)
             callQuestions()
+
+            let selection = event.target.innerText;
+
+            if (selection === questionList[currentQuestion].correctAnswer) {
+                score++
+            } 
+            
+            document.getElementById("running-score").innerHTML = "Current Score <br>=   " + score + "/5";
+
             remainingQuestions--
             console.log("questions remaining = " + remainingQuestions)
         })
