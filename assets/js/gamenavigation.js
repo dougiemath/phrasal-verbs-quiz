@@ -86,5 +86,18 @@ if (readingContainer.style.display = "none"){
     readingContainer.style.display = "block";
     questionContainer.style.display = "block"
 }
+}
 
+/**
+ * Shows the answers container
+ */
+
+function showAnswers(){
+    let feedbackContainer = document.getElementById("feedback-container");
+    let answersContainer = document.getElementById("answers-container");
+
+    if (answersContainer.style.display = "none"){
+        answersContainer.style.display = "block";
+        feedbackContainer.style.display = "none"
+    }
 }
