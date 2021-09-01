@@ -96,6 +96,7 @@ function callQuestions() {
     if (currentQuestion >= questionList.length) {
         alert("All the questions are done");
         displayFeedbackContainer();
+        hideQuestionContainer()
         return;
     }
     document.getElementById("quiz-questions").innerHTML = questionList[currentQuestion].question;

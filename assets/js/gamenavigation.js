@@ -27,12 +27,22 @@ function hideUsername(){
     languageContainer.style.display = "none"
 }
 
-
 /**
  * displays the feedback div
  */
+
 function displayFeedbackContainer(){
     let feedbackContainer = document.getElementById("feedback-container");
     if (feedbackContainer.style.display = "none");
         feedbackContainer.style.display = "block"
+}
+
+/**
+ * hides the question container div
+ */
+
+function hideQuestionContainer(){
+    let questionContainer = document.getElementById("question-container")
+        if (questionContainer.style.display = "block");
+        questionContainer.style.display = "none";
 }
