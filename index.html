@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,189 +9,205 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>Skye Online English: Phrasal Verbs Exercise</title>
 </head>
+
 <body>
-<!-- div for header -->
+    <!-- div for header -->
 
-<header>
-    <div class="site-header container">
-        <div class="site-logo"><img src="assets/images/banner.png" id="banner"></div>
-        <div class="site-title">
-            <h1 id="banner-title-text">Phrasal Verbs with 'DOWN'</h1>
-        </div>
-    </div>
-</header>
-
-<!-- div for username input -->
-<div class="container" id="username-container">
-    <div class="enter-username">
-        <label id="username-label" for="username-input">Please enter a user name: </label>
-        <div class="username-break"><br></div>
-        <input id="username-input" type="text" name="username" placeholder="Type here" required>
-        <br>
-        <input id="username-submit" class="navigation-buttons" type="submit" onclick="displayStartMessage(); hideUsername(); displayLangaugePoint()" style="display:none;">
-    </div>
-</div>    
-<!-- div for welcome message + language point -->
-<div class= "container" id="language-point-container">
-    <h2 id= "instructions-message"></h2>
-    <hr>
-    <div class="language-points" id = "language-points">
-        <p class="point">I <span class="key-language">knocked him down</span> by £100 but he wouldn’t go any
-            lower.</p>
-        <p class="description">I was able to convince him to lower the price to £100, but he wouldn't reduce it
-            any further.</p>
-        <p class="point">The terrorists mercilessly <span class="key-language">gunned down</span> their victims.
-        </p>
-        <p class="description">The terrorists mercilessly shot their victims many times.</p>
-        <p class="point">My brother prefers to take temporary work because he hates the idea of <span
-                class="key-language">being tied down</span>.</p>
-        <p class="description">My brother prefers to take temporary work because he hates the idea of staying
-            with only one company for the rest of his life.</p>
-        <p class="point">I couldn’t hear what the prime minister was saying because some people at the front
-            were <span class="key-language">shouting him down</span>.</p>
-        <p class="description">I couldn’t hear what the prime minister was saying because some people at the
-            front were shouting at him so much that he was unable to speak.</p>
-        <p class="point">Two police officers <span class="key-language">pinned the robber down</span> while the
-            third handcuffed him.</p>
-        <p class="description">Two police officers made sure that the robber couldn't move on the ground while
-            the third handcuffed him.</p>
-    </div>
-    <hr>
-    <p id="ready-message"></p>
-    <div class="start-button-div">
-        <button class="navigation-buttons" id="start-button" onclick="startGame(); hideLanguageContainer(); displayExercise()">Start Quiz!!</button>
-    </div>
-</div>
-<!-- div for reading passage -->
-
-<div class="container" id = "reading-container">
-    <h2 class="exercise-instructions">Read the paragraph and answer the questions below.</h2>
-    <h3 class="exercise-instructions">You only have one chance per answer.</h3>
-    <hr>
-    <p id="reading-text">Harry Irving felt he had lost his freedom when he and Antonia had their first baby.
-        Oliver Reece was forced to the ground and held there by two security guards. People protested so loudly
-        that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price by
-        £500. Lucas Hind was shot dead yesterday by terrorists. </p>
-</div>
-
-<!-- div for questions -->
-
-<div class="container" id = "question-container">
-    <div class="question-box">
-        <div class="question">
-            <p id="quiz-questions">Question#</p>
-        </div>
-        <div class="answer-a"><button class = "answer-options buttons answer" id = "button-a">placeholder</button>
-        </div>
-
-        <div class=" answer-b"><button class = "answer-options buttons answer" id = "button-b">placeholder</button>
-        </div>
-
-        <div class="answer-c"><button class = "answer-options buttons answer" id = "button-c">placeholder</button>
-        </div>
-
-        <div class="answer-d"><button class = "answer-options buttons answer"  id = "button-d">placeholder</button>
-        </div>
-        <hr id="horizontal-break-in-questions">
-        <div class="score-and-progress-counter">
-            <div class="current-score">
-                <p class="running-totals" id = "running-score">Current Score <br> =
-                </p>
-            </div>
-            <div class="questions-remaining">
-                <p class="running-totals" id = "remaining-questions">Questions left <br> =
-                </p>
+    <header>
+        <div class="site-header container">
+            <div class="site-logo"><img src="assets/images/banner.png" id="banner"></div>
+            <div class="site-title">
+                <h1 id="banner-title-text">Phrasal Verbs with 'DOWN'</h1>
             </div>
         </div>
-    </div>
-</div>
+    </header>
 
-<!-- div for final score -->
-
-<div class="container" id = "feedback-container">
-    <div class="feedback-title">
-        <h2 class=exercise-instructions>Final Score</h2>
-        <hr>
-    </div>
-    <div class="final-score">
-        <p id="final-score"></p>
-    </div>
-    <div id="final-score-image">
-        <img id="feedback-image-zero-marks" class="feedbackImage" src="assets/images/im-sorry.gif">
-        <img id="feedback-image-full-marks" class="feedbackImage" src="assets/images/rosycheeks-approved.gif">
-        <img id="feedback-image-not-bad" class="feedbackImage" src="assets/images/not-bad-dog.gif">
-    </div>
-    <div class="restart-and-answers-box">
-        <div class="restart-quiz-button-box">
-            <button class="navigation-buttons show-answers" id="show-answer-button"
-                type="button" onclick="showAnswers()">Show <br class = "button-break">Answers</button></div>
-        <div class="restart-quiz-button-box">
-            <button class="navigation-buttons show-answers" onclick="location.href = 'index.html'" type="button">Restart <br class = "button-break">Quiz</button>
+    <!-- div for username input -->
+    <div class="container" id="username-container">
+        <div class="enter-username">
+            <label id="username-label" for="username-input">Please enter a user name: </label>
+            <div class="username-break"><br></div>
+            <input id="username-input" type="text" name="username" placeholder="Type here" required>
+            <br>
+            <input id="username-submit" class="navigation-buttons" type="submit"
+                onclick="displayStartMessage(); hideUsername(); displayLangaugePoint()" style="display:none;">
         </div>
     </div>
-</div>
+    <!-- div for welcome message + language point -->
+    <div class="container" id="language-point-container">
+        <h2 id="instructions-message"></h2>
+        <hr class="langauge-point-hr">
+        <div class="language-points" id="language-points">
+            <p class="point">I <span class="key-language">knocked him down</span> by £100 but he wouldn’t go any
+                lower.</p>
+            <p class="description">I was able to convince him to lower the price to £100, but he wouldn't reduce it
+                any further.</p>
+            <hr class="langauge-point-hr">
 
-<!-- div for answers -->
+            <p class="point">The terrorists mercilessly <span class="key-language">gunned down</span> their victims.
+            </p>
+            <p class="description">The terrorists mercilessly shot their victims many times.</p>
+            <hr class="langauge-point-hr">
 
-<div class="container" id = "answers-container">
-    <div class="answer-descriptions">
-        <h2 class=exercise-instructions>Answers</h2>
-        <hr>
-        <p class="point">1. Who was shouted down? - <span class="key-language">Heidi</span></p>
-        <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
-            baby.
-            Oliver Reece was forced to the ground and held there by two security guards. <span
-                class="key-language">People protested so loudly
-                that no one could hear what Heidi Knight had to say.</span> Mia Calvo persuaded the man to
-            reduce
-            the price by
-            £500. Lucas Hind was shot dead yesterday by terrorists. </p>
-        <hr>
-        <p class="point">2. Who was gunned down? - <span class="key-language">Lucas</span></p>
-        <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
-            baby.
-            Oliver Reece was forced to the ground and held there by two security guards. People protested so
-            loudly
-            that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price
-            by
-            £500. <span class="key-language">Lucas Hind was shot dead yesterday by terrorists.</span> </p>
-        <hr>
-        <p class="point">3. Who felt tied down? - <span class="key-language">Harry</span></p>
-        <p class="description"><span class="key-language">Harry Irving felt he had lost his freedom when he and
-                Antonia had their first baby.</span>
-            Oliver Reece was forced to the ground and held there by two security guards. People protested so
-            loudly
-            that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price
-            by
-            £500. Lucas Hind was shot dead yesterday by terrorists. </p>
-        <hr>
-        <p class="point">4. Who was pinned down? - <span class="key-language">Oliver</span></p>
-        <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
-            baby.
-            <span class="key-language">Oliver Reece was forced to the ground and held there by two security
-                guards.</span> People protested so loudly
-            that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price
-            by
-            £500. Lucas Hind was shot dead yesterday by terrorists.
-        </p>
-        <hr>
-        <p class="point">5. Who managed to knock someone down? - <span class="key-language">Mia</span></p>
-        <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
-            baby.
-            Oliver Reece was forced to the ground and held there by two security guards. People protested so
-            loudly
-            that no one could hear what Heidi Knight had to say. <span class="key-language">Mia Calvo persuaded
-                the
-                man to reduce the price by
-                £500.</span> Lucas Hind was shot dead yesterday by terrorists. </p>
-        <hr>
+            <p class="point">My brother prefers to take temporary work because he hates the idea of <span
+                    class="key-language">being tied down</span>.</p>
+            <p class="description">My brother prefers to take temporary work because he hates the idea of staying
+                with only one company for the rest of his life.</p>
+            <hr class="langauge-point-hr">
+
+            <p class="point">I couldn’t hear what the prime minister was saying because some people at the front
+                were <span class="key-language">shouting him down</span>.</p>
+            <p class="description">I couldn’t hear what the prime minister was saying because some people at the
+                front were shouting at him so much that he was unable to speak.</p>
+            <hr class="langauge-point-hr">
+
+            <p class="point">Two police officers <span class="key-language">pinned the robber down</span> while the
+                third handcuffed him.</p>
+            <p class="description">Two police officers made sure that the robber couldn't move on the ground while
+                the third handcuffed him.</p>
+        </div>
+        <hr class="langauge-point-hr">
+
+        <p id="ready-message"></p>
+        <div class="start-button-div">
+            <button class="navigation-buttons" id="start-button"
+                onclick="startGame(); hideLanguageContainer(); displayExercise()">Start Quiz!!</button>
+        </div>
     </div>
-    <div class="restart-quiz-button-box">
-        <button class="navigation-buttons" onclick="location.href = 'index.html'" type="button">Restart Quiz</button>
+    <!-- div for reading passage -->
+
+    <div class="container" id="reading-container">
+        <h2 class="exercise-instructions">Read the paragraph and answer the questions below.</h2>
+        <h3 class="exercise-instructions">You only have one chance per answer.</h3>
+        <hr>
+        <p id="reading-text">Harry Irving felt he had lost his freedom when he and Antonia had their first baby.
+            Oliver Reece was forced to the ground and held there by two security guards. People protested so loudly
+            that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price by
+            £500. Lucas Hind was shot dead yesterday by terrorists. </p>
     </div>
-</div>
+
+    <!-- div for questions -->
+
+    <div class="container" id="question-container">
+        <div class="question-box">
+            <div class="question">
+                <p id="quiz-questions">Question#</p>
+            </div>
+            <div class="answer-a"><button class="answer-options buttons answer" id="button-a">placeholder</button>
+            </div>
+
+            <div class=" answer-b"><button class="answer-options buttons answer" id="button-b">placeholder</button>
+            </div>
+
+            <div class="answer-c"><button class="answer-options buttons answer" id="button-c">placeholder</button>
+            </div>
+
+            <div class="answer-d"><button class="answer-options buttons answer" id="button-d">placeholder</button>
+            </div>
+            <hr id="horizontal-break-in-questions">
+            <div class="score-and-progress-counter">
+                <div class="current-score">
+                    <p class="running-totals" id="running-score">Current Score <br> =
+                    </p>
+                </div>
+                <div class="questions-remaining">
+                    <p class="running-totals" id="remaining-questions">Questions left <br> =
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- div for final score -->
+
+    <div class="container" id="feedback-container">
+        <div class="feedback-title">
+            <h2 class=exercise-instructions>Final Score</h2>
+            <hr>
+        </div>
+        <div class="final-score">
+            <p id="final-score"></p>
+        </div>
+        <div id="final-score-image">
+            <img id="feedback-image-zero-marks" class="feedbackImage" src="assets/images/im-sorry.gif">
+            <img id="feedback-image-full-marks" class="feedbackImage" src="assets/images/rosycheeks-approved.gif">
+            <img id="feedback-image-not-bad" class="feedbackImage" src="assets/images/not-bad-dog.gif">
+        </div>
+        <div class="restart-and-answers-box">
+            <div class="restart-quiz-button-box">
+                <button class="navigation-buttons show-answers" id="show-answer-button" type="button"
+                    onclick="showAnswers()">Show <br class="button-break">Answers</button>
+            </div>
+            <div class="restart-quiz-button-box">
+                <button class="navigation-buttons show-answers" onclick="location.href = 'index.html'"
+                    type="button">Restart <br class="button-break">Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- div for answers -->
+
+    <div class="container" id="answers-container">
+        <div class="answer-descriptions">
+            <h2 class=exercise-instructions>Answers</h2>
+            <hr>
+            <p class="point">1. Who was shouted down? - <span class="key-language">Heidi</span></p>
+            <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
+                baby.
+                Oliver Reece was forced to the ground and held there by two security guards. <span
+                    class="key-language">People protested so loudly
+                    that no one could hear what Heidi Knight had to say.</span> Mia Calvo persuaded the man to
+                reduce
+                the price by
+                £500. Lucas Hind was shot dead yesterday by terrorists. </p>
+            <hr class="langauge-point-hr">
+            <p class="point">2. Who was gunned down? - <span class="key-language">Lucas</span></p>
+            <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
+                baby.
+                Oliver Reece was forced to the ground and held there by two security guards. People protested so
+                loudly
+                that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price
+                by
+                £500. <span class="key-language">Lucas Hind was shot dead yesterday by terrorists.</span> </p>
+            <hr class="langauge-point-hr">
+            <p class="point">3. Who felt tied down? - <span class="key-language">Harry</span></p>
+            <p class="description"><span class="key-language">Harry Irving felt he had lost his freedom when he and
+                    Antonia had their first baby.</span>
+                Oliver Reece was forced to the ground and held there by two security guards. People protested so
+                loudly
+                that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price
+                by
+                £500. Lucas Hind was shot dead yesterday by terrorists. </p>
+            <hr class="langauge-point-hr">
+            <p class="point">4. Who was pinned down? - <span class="key-language">Oliver</span></p>
+            <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
+                baby.
+                <span class="key-language">Oliver Reece was forced to the ground and held there by two security
+                    guards.</span> People protested so loudly
+                that no one could hear what Heidi Knight had to say. Mia Calvo persuaded the man to reduce the price
+                by
+                £500. Lucas Hind was shot dead yesterday by terrorists.
+            </p>
+            <hr class="langauge-point-hr">
+            <p class="point">5. Who managed to knock someone down? - <span class="key-language">Mia</span></p>
+            <p class="description">Harry Irving felt he had lost his freedom when he and Antonia had their first
+                baby.
+                Oliver Reece was forced to the ground and held there by two security guards. People protested so
+                loudly
+                that no one could hear what Heidi Knight had to say. <span class="key-language">Mia Calvo persuaded
+                    the
+                    man to reduce the price by
+                    £500.</span> Lucas Hind was shot dead yesterday by terrorists. </p>
+            <hr class="langauge-point-hr">
+        </div>
+        <div class="restart-quiz-button-box">
+            <button class="navigation-buttons" onclick="location.href = 'index.html'" type="button">Restart
+                Quiz</button>
+        </div>
+    </div>
 
     <script src="assets/js/gamenavigation.js"></script>
     <script src="assets/js/gamescript.js"></script>
 </body>
+
 </html>

@@ -175,9 +175,9 @@ hr{
 }
 
 @media only screen and (max-width: 480px) {
-    hr{
-        margin-top: 5%;
-        margin-bottom: 5%;
+    .langauge-point-hr{
+        margin-top:5%;
+        margin-bottom:5%
     }
 }
 
