@@ -174,6 +174,13 @@ hr{
     margin-bottom: 3%;
 }
 
+@media only screen and (max-width: 480px) {
+    hr{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
 #ready-message{
     margin-left: 5%;
     margin-right: 5%;
@@ -214,13 +221,18 @@ hr{
 }
 
 .question{
-    height: 1.5rem;
     width: 98%;    
     padding-left: 1%;
 }
 
 #quiz-questions{
     margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 480px) {
+ #quiz-questions{
+     font-size: small;
+ }
 }
 
 .buttons{
@@ -248,9 +260,9 @@ hr{
 }
 
 @media only screen and (max-width: 480px) {
-    #button-a{
-    margin-top: 15%;
-}
+    #quiz-questions{
+        margin-top: 2%;
+    }
 }
 
 /*score and progress counter*/
