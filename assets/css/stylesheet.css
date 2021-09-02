@@ -215,10 +215,12 @@ hr{
 
 .question{
     height: 1.5rem;
-    width: 98%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;    
+    width: 98%;    
     padding-left: 1%;
+}
+
+#quiz-questions{
+    margin-bottom: 10%;
 }
 
 .buttons{
@@ -240,6 +242,17 @@ hr{
     color: white;
 }
 
+.answer-options {
+    font-family: Lato;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    #button-a{
+    margin-top: 15%;
+}
+}
+
 /*score and progress counter*/
 
 .score-and-progress-counter{
@@ -247,6 +260,25 @@ hr{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    font-size: small;
+}
+
+#horizontal-break-in-questions{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .score-and-progress-counter{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #horizontal-break-in-questions{
+        margin-top: 5%;
+        display: block;
+    }
 }
 
 .current-score{
@@ -264,6 +296,16 @@ hr{
     border:solid 0.5px rgb(184,119,169);
     background-color: white;
     text-align: center;
+}
+
+.button-break{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .button-break{
+        display: block;
+    }
 }
 
 /*Answer section*/
