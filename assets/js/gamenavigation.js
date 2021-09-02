@@ -101,3 +101,132 @@ function showAnswers(){
         feedbackContainer.style.display = "none"
     }
 }
+
+
+//button A mouse over and touch effect
+
+document.getElementById("button-a").onmouseover = function greenBackground() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+}
+
+document.getElementById("button-a").onmouseleave = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-a").onmouseup = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-a").ontouchstart = function greenBackgroundOnTouch() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+};
+
+document.getElementById("button-a").ontouchend = function originalBackgroundOnTouch() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+};
+
+//button B mouse over and touch effect
+
+document.getElementById("button-b").onmouseover = function greenBackground() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+}
+
+document.getElementById("button-b").onmouseleave = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-b").onmouseup = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-b").ontouchstart = function greenBackgroundOnTouch() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+};
+
+document.getElementById("button-b").ontouchend = function originalBackgroundOnTouch() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+};
+
+//button C mouse over and touch effect
+
+document.getElementById("button-c").onmouseover = function greenBackground() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+}
+
+document.getElementById("button-c").onmouseleave = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-c").onmouseup = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-c").ontouchstart = function greenBackgroundOnTouch() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+};
+
+document.getElementById("button-c").ontouchend = function originalBackgroundOnTouch() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+};
+
+//button D mouse over and touch effect
+
+document.getElementById("button-d").onmouseover = function greenBackground() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+}
+
+document.getElementById("button-d").onmouseleave = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-d").onmouseup = function originaBackground() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+}
+
+document.getElementById("button-d").ontouchstart = function greenBackgroundOnTouch() {
+    this.style.border = "solid 0.5px  rgb(12,173,149)";
+    this.style.backgroundColor = "rgb(12,173,149)";
+    this.style.color = "white";
+};
+
+document.getElementById("button-d").ontouchend = function originalBackgroundOnTouch() {
+    this.style.border = "solid 0.5px rgb(184,119,169)";
+    this.style.backgroundColor = "white";
+    this.style.color = "rgb(184,119,169)";
+};

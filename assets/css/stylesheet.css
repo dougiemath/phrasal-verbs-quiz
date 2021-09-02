@@ -248,12 +248,6 @@ hr{
     cursor: pointer;
 }
 
-.buttons:hover{
-    border:solid 0.5px  rgb(12,173,149);
-    background-color:  rgb(12,173,149);
-    color: white;
-}
-
 .answer-options {
     font-family: Lato;
     font-weight: bold;
