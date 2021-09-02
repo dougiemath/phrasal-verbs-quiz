@@ -1,3 +1,94 @@
+# Phrasal Verbs Quiz
+Images
+
+## User Experience (UX)
+--- 
+### User Stories
+* First Time Visitor
+    * what does he do?
+* Returning Visitor
+    * what does he do?
+* Frequent User
+    * what does he do?
+
+### Design
+* Colour Scheme
+    * more info
+* Typography
+    * what does he do?
+* Imagery
+    * what does he do?
+
+### Wireframes 
+#### Computer View
+#### Tablet View
+#### Mobile View
+
+## Features
+---
+* Responsive on all device sizes
+* Interactive elements
+
+## Technologies Used
+---
+### Languages Used
+* HTML
+* CSS
+* JS
+
+### Frameworks / Libraries / Programs Used
+1. Google Fonts
+    * Google fonts were used to import the 'Lato' and 'Source Sans Pro' fonts into the style.css file which is used on all pages throughout the project.
+2. Git
+    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+3. GitHub
+    * GitHub is used to store the projects code after being pushed from Git.
+4. Visual Studio Code
+    * Visual Studio Code was practise and develop the different sections of the quz before inseerting it into Git.
+
+## Testing
+---
+W3C Markup - HTML
+W3C Markup - CSS
+JSHINT
+
+### Testing User Stories from User Experience (UX) Section
+* First Time Visitor
+    * what does he do?
+    * test results
+* Returning Visitor
+    * what does he do?
+    * test results
+* Frequent User
+    * what does he do?
+    * test results
+
+### Further Testing
+
+### Known Bugs
+
+## Credits
+---
+### Code
+All code was written by the developer.
+
+### Content
+Adapted from Phrasal Verbs in Use (link)
+
+### Media
+Logo property of developer
+Feedback Image 1
+Feedback Image 2
+Feedback Image 3
+
+## Acknowledgements
+* My mentor for the feedback and advice
+* My wife for keeping me sane
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome dougiemath,
