@@ -81,7 +81,7 @@ This quiz is intended to be used by students who are studying English as a secon
 ### Known Bugs
 
 ## Credits
----
+
 ### Code
 All code was written by the developer.
 

@@ -46,6 +46,8 @@ body{
     border:solid 0.5px rgb(12,173,149);    
 }
 
+/*Heading Section*/
+
 .site-header{
     display: flex;
     flex-direction: row;
@@ -93,6 +95,42 @@ body{
 
 .username-break{
     display: none;
+}
+
+/* medai query for header */
+
+@media only screen and (max-width: 480px) {
+    .site-header{
+        flex-direction: column;
+    }
+    .site-title{
+        border-left:none;
+        border-top: rgb(184,119,169) solid 1px;
+        padding-top: 2%;
+        margin-top: 2%;
+        margin-bottom: 1.5%;
+        width: 90%;
+    }
+
+        #banner-title-text{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .site-header{
+        flex-direction: column;
+    }
+    .site-title{
+        border-left:none;
+        border-top: rgb(184,119,169) solid 1px;
+        padding-top: 2%;
+        margin-top: 2%;
+        width: 90%;
+    }
+    #banner-title-text{
+        font-size: 1.5rem;
+    }
 }
 
 /*Language Points*/
@@ -278,6 +316,8 @@ hr{
 .show-answers{
     width: 100%;
 }
+
+
 
 /*Element IDs for JS Functions*/
 #username-container{
