@@ -14,14 +14,14 @@
     <!-- div for header -->
 
     <header>
-        <div class="site-header container">
+        <div class="site-header container" id="header">
             <div class="site-logo"><img src="assets/images/banner.png" id="banner"></div>
             <div class="site-title">
                 <h1 id="banner-title-text">Phrasal Verbs with 'DOWN'</h1>
             </div>
         </div>
     </header>
-
+    <div id = anchor></div>
     <!-- div for username input -->
     <div class="container" id="username-container">
         <div class="enter-username">
@@ -29,7 +29,7 @@
             <div class="username-break"><br></div>
             <input id="username-input" type="text" name="username" placeholder="Type here" required>
             <br>
-            <input id="username-submit" class="navigation-buttons" type="submit"
+            <input id="username-submit" class="navigation-buttons all-buttons" type="submit"
                 onclick="displayStartMessage(); hideUsername(); displayLangaugePoint()" style="display:none;">
         </div>
     </div>
@@ -70,8 +70,9 @@
 
         <p id="ready-message"></p>
         <div class="start-button-div">
-            <button class="navigation-buttons" id="start-button"
-                onclick="startGame(); hideLanguageContainer(); displayExercise()">Start Quiz!!</button>
+            <button class="navigation-buttons all-buttons" id="start-button"
+                onclick="startGame(); hideLanguageContainer(); displayExercise(); visitPage()">Start
+                Quiz!!</button>
         </div>
     </div>
     <!-- div for reading passage -->
@@ -93,16 +94,20 @@
             <div class="question">
                 <p id="quiz-questions">Question#</p>
             </div>
-            <div class="answer-a"><button class="answer-options buttons answer" id="button-a">placeholder</button>
+            <div class="answer-a"><button class="answer-options buttons answer all-buttons"
+                    id="button-a">placeholder</button>
             </div>
 
-            <div class=" answer-b"><button class="answer-options buttons answer" id="button-b">placeholder</button>
+            <div class=" answer-b"><button class="answer-options buttons answer all-buttons"
+                    id="button-b">placeholder</button>
             </div>
 
-            <div class="answer-c"><button class="answer-options buttons answer" id="button-c">placeholder</button>
+            <div class="answer-c"><button class="answer-options buttons answer all-buttons"
+                    id="button-c">placeholder</button>
             </div>
 
-            <div class="answer-d"><button class="answer-options buttons answer" id="button-d">placeholder</button>
+            <div class="answer-d"><button class="answer-options buttons answer all-buttons"
+                    id="button-d">placeholder</button>
             </div>
             <hr id="horizontal-break-in-questions">
             <div class="score-and-progress-counter">
@@ -135,11 +140,11 @@
         </div>
         <div class="restart-and-answers-box">
             <div class="restart-quiz-button-box">
-                <button class="navigation-buttons show-answers" id="show-answer-button" type="button"
-                    onclick="showAnswers()">Show <br class="button-break">Answers</button>
+                <button class="navigation-buttons show-answers all-buttons" id="show-answer-button" type="button"
+                    onclick="showAnswers(); visitPage()">Show <br class="button-break">Answers</button>
             </div>
             <div class="restart-quiz-button-box">
-                <button class="navigation-buttons show-answers" onclick="location.href = 'index.html'"
+                <button class="navigation-buttons show-answers all-buttons" onclick="location.href = 'index.html'"
                     type="button">Restart <br class="button-break">Quiz</button>
             </div>
         </div>
@@ -201,7 +206,7 @@
             <hr class="langauge-point-hr">
         </div>
         <div class="restart-quiz-button-box">
-            <button class="navigation-buttons" onclick="location.href = 'index.html'" type="button">Restart
+            <button class="navigation-buttons all-buttons" onclick="location.href = 'index.html'" type="button">Restart
                 Quiz</button>
         </div>
     </div>

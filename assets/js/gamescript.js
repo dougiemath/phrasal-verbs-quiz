@@ -37,10 +37,10 @@ let questionList = [{
  * Function to start game on pressing Enter at usersubmit screen
  */
 
- document.getElementById("username-input").addEventListener("keydown", function(event) {
+document.getElementById("username-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         displayStartMessage();
-        hideUsername(); 
+        hideUsername();
         displayLangaugePoint();
     }
 });
@@ -105,6 +105,7 @@ function callQuestions() {
         displayFeedbackContainer();
         hideQuestionContainer();
         dispalyFinalImage();
+        visitPage()
         return;
     }
 
