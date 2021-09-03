@@ -1,3 +1,7 @@
+/**
+ * Variables list
+ */
+
 let answers = Array.from(document.getElementsByClassName("answer"))
 let currentQuestion;
 let score;
@@ -45,7 +49,9 @@ document.getElementById("username-input").addEventListener("keydown", function (
     }
 });
 
-//function to display start message
+/**
+ * function to display start message
+ */
 
 function displayStartMessage() {
     let username = document.getElementById("username-input").value;
@@ -53,7 +59,9 @@ function displayStartMessage() {
     document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!"
 }
 
-// function to startGame
+/**
+ * function to startGame
+ */
 
 function startGame() {
     score = 0;
@@ -62,7 +70,9 @@ function startGame() {
     remainingQuestions = questionList.length;
 }
 
-// function to check answers
+/**
+ * function to check answers
+ */
 
 checkAnswer()
 
@@ -70,7 +80,6 @@ function checkAnswer() {
 
     answers.forEach(answer => {
         answer.addEventListener("click", event => {
-            console.log(event.target.innerText)
             let selection = event.target.innerText;
 
             if (selection === questionList[currentQuestion].correctAnswer) {
@@ -88,7 +97,7 @@ function checkAnswer() {
             remainingQuestions--
             document.getElementById("remaining-questions").innerHTML = "Qestions remaining <br>=  " + remainingQuestions + "/5";
 
-            //displays final score on ';'final score' container
+            //displays final score on 'final score' container
             let username = document.getElementById("username-input").value;
             document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length
 
@@ -97,7 +106,9 @@ function checkAnswer() {
     })
 }
 
-// function to call questions
+/**
+ * Function to call questions
+ */
 
 function callQuestions() {
     currentQuestion = currentQuestion + 1;
@@ -109,6 +120,7 @@ function callQuestions() {
         return;
     }
 
+    //Function to decide which image to display depending on the user's score
     function dispalyFinalImage() {
         let imageZero = document.getElementById("feedback-image-zero-marks");
         let fullMarksImage = document.getElementById("feedback-image-full-marks")

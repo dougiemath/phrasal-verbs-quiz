@@ -140,6 +140,11 @@ for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('touchend', hoverOffEffect);
 }
 
+/**
+ * Function to move page to just under header on 
+ * navigtion button presses
+ */
+
 function visitPage() {
     window.location.href = "#anchor"
 }

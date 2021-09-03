@@ -94,7 +94,7 @@ body{
     display: none;
 }
 
-/* medai query for header */
+/* media query for header */
 
 @media only screen and (max-width: 480px) {
     .site-header{
@@ -171,13 +171,6 @@ hr{
     margin-bottom: 3%;
 }
 
-@media only screen and (max-width: 480px) {
-    .langauge-point-hr{
-        margin-top:5%;
-        margin-bottom:5%
-    }
-}
-
 #ready-message{
     margin-left: 5%;
     margin-right: 5%;
@@ -208,6 +201,15 @@ hr{
     text-align: center;
 }
 
+/*Media query for langauge points*/
+
+@media only screen and (max-width: 480px) {
+    .langauge-point-hr{
+        margin-top:5%;
+        margin-bottom:5%
+    }
+}
+
 /*question container*/
 
 .question-box{
@@ -226,12 +228,6 @@ hr{
     margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 480px) {
- #quiz-questions{
-     font-size: small;
- }
-}
-
 .buttons{
     width: 100%;
     text-align: left;
@@ -247,9 +243,11 @@ hr{
     font-weight: bold;
 }
 
+
 @media only screen and (max-width: 480px) {
     #quiz-questions{
         margin-top: 2%;
+        font-size: small;
     }
 }
 
@@ -265,20 +263,6 @@ hr{
 
 #horizontal-break-in-questions{
     display: none;
-}
-
-@media only screen and (max-width: 480px) {
-    .score-and-progress-counter{
-        display: flex;
-        flex-direction: column;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #horizontal-break-in-questions{
-        margin-top: 5%;
-        display: block;
-    }
 }
 
 .current-score{
@@ -301,8 +285,20 @@ hr{
 .button-break{
     display: none;
 }
+/*Media query for score and progress counter*/
 
 @media only screen and (max-width: 480px) {
+    .score-and-progress-counter{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #horizontal-break-in-questions{
+        margin-top: 5%;
+        display: block;
+    }
     .button-break{
         display: block;
     }
