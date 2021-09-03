@@ -358,7 +358,10 @@ hr{
 
 
 /*Element IDs for JS Functions*/
-#username-container,
+#username-container{
+    display: block;
+}
+
 #language-point-container,
 #reading-container,
 #question-container,
@@ -367,5 +370,5 @@ hr{
 #feedback-image-zero-marks,
 #feedback-image-full-marks,
 #feedback-image-not-bad{
-    display: block;
+    display: none;
 }
