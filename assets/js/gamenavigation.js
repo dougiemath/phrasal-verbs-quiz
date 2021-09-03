@@ -15,14 +15,17 @@
 document.getElementById("username-input").focus()
 
 //fffffffffffffffffffffffffffffffffffffff
-function showHide(target){
+function showHide(target)
+{
     let container = document.getElementById(target)
-    if (container.style.display = "block"){
-        container.style.display = "none"
-    } else {
+
+    if (container.style.display = "none"){
         container.style.display = "block"
+    } else {
+        container.style.display = "none"
     }
 }
+
 
 
 /**

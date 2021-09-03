@@ -360,6 +360,10 @@ hr{
     display: block;
 }
 
-#language-point-container, #reading-container, #question-container, #feedback-container, #answers-container, #feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
+#language-point-container, #question-container, #feedback-container, #answers-container, #feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
     display:none;
+}
+
+#reading-container{
+    display: block;
 }
