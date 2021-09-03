@@ -67,14 +67,13 @@ function startGame() {
     score = 0;
     currentQuestion = -1;
     callQuestions();
+    checkAnswer()
     remainingQuestions = questionList.length;
 }
 
 /**
  * function to check answers
  */
-
-checkAnswer()
 
 function checkAnswer() {
 
