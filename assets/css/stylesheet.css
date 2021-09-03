@@ -362,13 +362,6 @@ hr{
     display: block;
 }
 
-#language-point-container,
-#reading-container,
-#question-container,
-#feedback-container,
-#answers-container,
-#feedback-image-zero-marks,
-#feedback-image-full-marks,
-#feedback-image-not-bad{
-    display: none;
+#language-point-container, #reading-container, #question-container, #feedback-container, #answers-container, #feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
+    display:none;
 }
