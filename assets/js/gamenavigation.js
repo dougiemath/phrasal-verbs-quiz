@@ -18,11 +18,13 @@ function showHide(target){
 let container = document.getElementById(target)
 
 if (container.style.display = "none"){
-    coontainer.style.dispaly = "block"
+    container.style.dispaly = "block"
 } else {
     container.style.dispaly = "none"
+    }
 }
-}
+
+
 /**
  * Hides the username-input div
  *  */
