@@ -83,9 +83,8 @@ function checkAnswer() {
 
             if (selection === questionList[currentQuestion].correctAnswer) {
                 score++
-            } else {
-                score + 0
-            }
+            } 
+            
             //calculate running score
             document.getElementById("running-score").innerHTML = "Current Score <br>=   " + score + "/5";
 
