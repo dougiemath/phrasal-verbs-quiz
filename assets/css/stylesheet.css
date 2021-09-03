@@ -358,38 +358,14 @@ hr{
 
 
 /*Element IDs for JS Functions*/
-#username-container{
-    display: block;
-}
-
-#language-point-container{
-    display: none;
-}
-
-#reading-container{
-    display: none;
-}
-
-#question-container{
-    display: none;
-}
-
-#feedback-container{
-    display: none;
-}
-
-#answers-container{
-    display: none;
-}
-
-#feedback-image-zero-marks{
-    display: none;
-}
-
-#feedback-image-full-marks{
-    display: none;
-}
-
+#username-container,
+#language-point-container,
+#reading-container,
+#question-container,
+#feedback-container,
+#answers-container,
+#feedback-image-zero-marks,
+#feedback-image-full-marks,
 #feedback-image-not-bad{
-    display: none;
+    display: block;
 }
