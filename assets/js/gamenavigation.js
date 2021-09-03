@@ -126,21 +126,9 @@ let buttons = document.getElementsByClassName('all-buttons');
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('mouseover', hoverEffect);
-}
-
-for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('mouseleave', hoverOffEffect);
-}
-
-for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('mouseup', hoverOffEffect);
-}
-
-for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('touchstart', hoverEffect);
-}
-
-for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('touchend', hoverOffEffect);
 }
 
