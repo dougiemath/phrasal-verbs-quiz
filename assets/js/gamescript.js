@@ -1,7 +1,3 @@
-/**
- * Variables list
- */
-
 let answers = Array.from(document.getElementsByClassName("answer"))
 let currentQuestion;
 let score;
@@ -39,10 +35,10 @@ let questionList = [{
 ]
 
 /**
- * Function to load the 'submit' button only after the DOM has loaded
+ * Places the fcous on the user-input box
  */
 
- window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', (event) => {
     let submitButton = document.getElementById("username-submit")
     if (submitButton.style.display = "none");
     submitButton.style.display = "block"
@@ -52,21 +48,11 @@ let questionList = [{
  * Places the fcous on the user-input box
  **/
 
- document.getElementById("username-input").focus()
-
- function showHide(target) {
-     let targetContainer = document.getElementById(target)
-     if (targetContainer.style.display === "none") {
-         targetContainer.style.display = "block"
-     } else {
-         targetContainer.style.display = "none"
-     }
- }
+document.getElementById("username-input").focus()
 
 /**
  * Function to start game on pressing Enter at usersubmit screen
  */
-
 document.getElementById("username-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         displayStartMessage();
@@ -75,6 +61,18 @@ document.getElementById("username-input").addEventListener("keydown", function (
     }
 });
 
+/**
+ * Reusable function to show and hide divs 
+ */
+
+function showHide(target) {
+    let targetContainer = document.getElementById(target)
+    if (targetContainer.style.display === "none") {
+        targetContainer.style.display = "block"
+    } else {
+        targetContainer.style.display = "none"
+    }
+}
 /**
  * function to display start message
  */
@@ -98,53 +96,39 @@ function startGame() {
 }
 
 /**
- * function to check answers
+ * Function to check answers against the array
  */
 
 function checkAnswer() {
-
     answers.forEach(answer => {
         answer.addEventListener("click", event => {
             let selection = event.target.innerText;
-
             if (selection === questionList[currentQuestion].correctAnswer) {
                 score++
-            } 
-            
-            //calculate running score
+            }
             document.getElementById("running-score").innerHTML = "Current Score <br>" + score + "/5";
-
-            //calls the next question
             callQuestions()
-
-            //calculate remaining questions
             remainingQuestions--
             document.getElementById("remaining-questions").innerHTML = "Qestions remaining <br>" + remainingQuestions + "/5";
-
-            //displays final score on 'final score' container
             let username = document.getElementById("username-input").value;
             document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length
 
         })
-
     })
 }
 
-/**
- * Function to call questions
- */
-
+/** 
+ * function to call the first/next questions
+*/
 function callQuestions() {
     currentQuestion = currentQuestion + 1;
     if (currentQuestion >= questionList.length) {
         showHide('feedback-container');
         showHide('question-container');
-        showHide('reading-container');
+        showHide('reading-container')
         dispalyFinalImage();
         return;
     }
-
-    //Function to decide which image to display depending on the user's score
     function dispalyFinalImage() {
         let imageZero = document.getElementById("feedback-image-zero-marks");
         let fullMarksImage = document.getElementById("feedback-image-full-marks")
@@ -157,9 +141,7 @@ function callQuestions() {
         } else {
             fullMarksImage.style.display = "block";
         }
-
     }
-
     document.getElementById("quiz-questions").innerHTML = questionList[currentQuestion].question;
     document.getElementById("button-a").innerHTML = questionList[currentQuestion].choices[0];
     document.getElementById("button-b").innerHTML = questionList[currentQuestion].choices[1];
@@ -168,27 +150,18 @@ function callQuestions() {
 }
 
 /**
- * Function to reset all functions and start game afresh
+ * Function to reset the game (reloads page from the cache)
  */
 
- function resetGame() {
+function resetGame() {
     document.location.reload()
 }
 
 /**
- * Function to move page to just under header on 
- * navigtion button presses
+ * Functions to apply hover feature on buttons
  */
 
- function visitPage() {
-    window.location.href = "#anchor"
-}
-
-/**
- * Functions to apply hover feature on button
- */
-
- function hoverEffect() {
+function hoverEffect() {
     this.style.border = "solid 0.5px  rgb(12,173,149)";
     this.style.backgroundColor = "rgb(12,173,149)";
     this.style.color = "rgb(255,255,255)";
@@ -208,4 +181,12 @@ for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('mouseup', hoverOffEffect);
     buttons[i].addEventListener('touchstart', hoverEffect);
     buttons[i].addEventListener('touchend', hoverOffEffect);
+}
+
+/**
+ * Navigation function, buttons link to the header
+ */
+
+function visitPage() {
+    window.location.href = "#header"
 }
