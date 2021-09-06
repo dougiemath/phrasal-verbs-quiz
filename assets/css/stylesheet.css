@@ -252,7 +252,7 @@ hr{
 @media only screen and (max-width: 480px) {
     #quiz-questions{
         margin-top: 2%;
-        font-size: small;
+        font-size: 1rem;
     }
 }
 
@@ -263,7 +263,7 @@ hr{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    font-size: small;
+    font-size: 0.9rem;
 }
 
 #horizontal-break-in-questions{
