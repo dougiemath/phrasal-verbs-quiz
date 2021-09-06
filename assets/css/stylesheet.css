@@ -66,6 +66,7 @@ body{
 
 #banner-title-text{
     font-family:Lato, sans-serif;
+    font-weight: 400;
     font-size: 1.75rem;
     color: rgb(12,173,149);
 }
@@ -143,6 +144,7 @@ body{
     margin-left: 5%;
     margin-right: 5%;
     font-family: Lato, sans-serif;
+    font-weight: 400;
     color: rgb(12,173,149);
     margin-bottom: 2%;
     text-align: center;
@@ -175,6 +177,7 @@ hr{
     margin-left: 5%;
     margin-right: 5%;
     font-family: Lato, sans-serif;
+    font-weight: 400;
     margin-bottom: 2%;
     text-align: center;
 }
@@ -196,6 +199,7 @@ hr{
     margin-left: 5%;
     margin-right: 5%;
     font-family: Lato, sans-serif;
+    font-weight: 400;
     color: rgb(12,173,149);
     margin-bottom: 2%;
     text-align: center;
@@ -240,6 +244,7 @@ hr{
 
 .answer-options {
     font-family: Lato;
+    font-weight: 400;
     font-weight: bold;
 }
 
@@ -324,6 +329,7 @@ hr{
     margin-left: 5%;
     margin-right: 5%;
     font-family: Lato, sans-serif;
+    font-weight: 400;
     color: rgb(12,173,149);
     margin-bottom: 2%;
     text-align: center;
