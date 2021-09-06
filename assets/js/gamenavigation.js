@@ -14,6 +14,15 @@
 
 document.getElementById("username-input").focus()
 
+function showHide(target) {
+    let targetContainer = document.getElementById(target)
+    if (targetContainer.style.display === "none") {
+        targetContainer.style.display = "block"
+    } else {
+        targetContainer.style.display = "none"
+    }
+}
+
 /**
  * Function to apply hover feature on buttons
  */
