@@ -44,8 +44,8 @@ let questionList = [{
 document.getElementById("username-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         displayStartMessage();
-        hideUsername();
-        displayLangaugePoint();
+        showHide('language-point-container');
+        showHide('username-container')
     }
 });
 
@@ -111,10 +111,10 @@ function checkAnswer() {
 function callQuestions() {
     currentQuestion = currentQuestion + 1;
     if (currentQuestion >= questionList.length) {
-        displayFeedbackContainer();
-        hideQuestionContainer();
+        showHide('feedback-container');
+        showHide('question-container');
+        showHide('reading-container');
         dispalyFinalImage();
-        visitPage()
         return;
     }
 
