@@ -141,5 +141,12 @@ function callQuestions() {
     document.getElementById("button-d").innerHTML = questionList[currentQuestion].choices[3];
 }
 
+/**
+ * Function to reset all functions and start game afresh
+ */
+
+ function resetGame() {
+    document.location.reload()
+}
 
 

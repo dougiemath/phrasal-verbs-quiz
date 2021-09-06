@@ -149,7 +149,7 @@
                     onclick="visitPage(); showHide('answers-container'); showHide('feedback-container')">Show <br class="button-break">Answers</button>
             </div>
             <div class="restart-quiz-button-box">
-                <button class="navigation-buttons show-answers all-buttons" onclick="visitPage(); showHide('feedback-container'); showHide('username-container')"
+                <button class="navigation-buttons show-answers all-buttons" onclick="visitPage(); showHide('feedback-container'); showHide('username-container'); resetGame()"
                     type="button">Restart <br class="button-break">Quiz</button>
             </div>
         </div>
@@ -211,7 +211,7 @@
             <hr class="langauge-point-hr">
         </div>
         <div class="restart-quiz-button-box">
-            <button class="navigation-buttons all-buttons" onclick="location.href = 'index.html'" type="button">Restart
+            <button class="navigation-buttons all-buttons" onclick="resetGame()" type="button">Restart
                 Quiz</button>
         </div>
     </div>
