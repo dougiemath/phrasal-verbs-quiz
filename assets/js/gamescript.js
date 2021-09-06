@@ -86,14 +86,14 @@ function checkAnswer() {
             } 
             
             //calculate running score
-            document.getElementById("running-score").innerHTML = "Current Score <br>=   " + score + "/5";
+            document.getElementById("running-score").innerHTML = "Current Score <br>" + score + "/5";
 
             //calls the next question
             callQuestions()
 
             //calculate remaining questions
             remainingQuestions--
-            document.getElementById("remaining-questions").innerHTML = "Qestions remaining <br>=  " + remainingQuestions + "/5";
+            document.getElementById("remaining-questions").innerHTML = "Qestions remaining <br>" + remainingQuestions + "/5";
 
             //displays final score on 'final score' container
             let username = document.getElementById("username-input").value;
