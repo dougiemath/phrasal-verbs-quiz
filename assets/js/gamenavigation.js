@@ -1,29 +1,4 @@
 /**
- * Places the fcous on the user-input box
- */
-
- window.addEventListener('DOMContentLoaded', (event) => {
-    let submitButton = document.getElementById("username-submit")
-    if (submitButton.style.display = "none");
-    submitButton.style.display = "block"
-});
-
-/**
- * Places the fcous on the user-input box
- **/
-
-document.getElementById("username-input").focus()
-
-function showHide(target) {
-    let targetContainer = document.getElementById(target)
-    if (targetContainer.style.display === "none") {
-        targetContainer.style.display = "block"
-    } else {
-        targetContainer.style.display = "none"
-    }
-}
-
-/**
  * Function to apply hover feature on buttons
  */
 
@@ -53,11 +28,3 @@ for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('touchend', hoverOffEffect);
 }
 
-/**
- * Function to move page to just under header on 
- * navigtion button presses
- */
-
-function visitPage() {
-    window.location.href = "#anchor"
-}
