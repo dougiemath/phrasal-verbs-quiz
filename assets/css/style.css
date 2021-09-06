@@ -208,7 +208,7 @@ hr{
 /*Media query for langauge points*/
 
 @media only screen and (max-width: 480px) {
-    .langauge-point-hr{
+    .language-point-hr{
         margin-top:5%;
         margin-bottom:5%
     }
@@ -230,6 +230,7 @@ hr{
 
 #quiz-questions{
     margin-bottom: 5%;
+    font-weight: 300;
 }
 
 .buttons{
