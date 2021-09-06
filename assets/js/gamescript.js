@@ -1,4 +1,4 @@
-let answers = Array.from(document.getElementsByClassName("answer"))
+let answers = Array.from(document.getElementsByClassName("answer"));
 let currentQuestion;
 let score;
 let remainingQuestions;
@@ -32,23 +32,23 @@ let questionList = [{
     choices: ["Harry", "Lucas", "Mia", "Oliver"],
     correctAnswer: "Mia"
 },
-]
+];
 
 /**
  * Places the fcous on the user-input box
  */
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    let submitButton = document.getElementById("username-submit")
+    let submitButton = document.getElementById("username-submit");
     if (submitButton.style.display = "none");
-    submitButton.style.display = "block"
+    submitButton.style.display = "block";
 });
 
 /**
  * Places the fcous on the user-input box
  **/
 
-document.getElementById("username-input").focus()
+document.getElementById("username-input").focus();
 
 /**
  * Function to start game on pressing Enter at usersubmit screen
@@ -57,7 +57,7 @@ document.getElementById("username-input").addEventListener("keydown", function (
     if (event.key === "Enter") {
         displayStartMessage();
         showHide('language-point-container');
-        showHide('username-container')
+        showHide('username-container');
     }
 });
 
@@ -66,11 +66,11 @@ document.getElementById("username-input").addEventListener("keydown", function (
  */
 
 function showHide(target) {
-    let targetContainer = document.getElementById(target)
+    let targetContainer = document.getElementById(target);
     if (targetContainer.style.display === "none") {
-        targetContainer.style.display = "block"
+        targetContainer.style.display = "block";
     } else {
-        targetContainer.style.display = "none"
+        targetContainer.style.display = "none";
     }
 }
 /**
@@ -79,8 +79,8 @@ function showHide(target) {
 
 function displayStartMessage() {
     let username = document.getElementById("username-input").value;
-    document.getElementById("instructions-message").textContent = "Hi " + username + ", before you start the exercise, please read the langauge point below."
-    document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!"
+    document.getElementById("instructions-message").textContent = "Hi " + username + ", before you start the exercise, please read the langauge point below.";
+    document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!";
 }
 
 /**
@@ -91,7 +91,7 @@ function startGame() {
     score = 0;
     currentQuestion = -1;
     callQuestions();
-    checkAnswer()
+    checkAnswer();
     remainingQuestions = questionList.length;
 }
 
@@ -104,17 +104,17 @@ function checkAnswer() {
         answer.addEventListener("click", event => {
             let selection = event.target.innerText;
             if (selection === questionList[currentQuestion].correctAnswer) {
-                score++
+                score++;
             }
             document.getElementById("running-score").innerHTML = "Current Score <br>" + score + "/5";
-            callQuestions()
-            remainingQuestions--
+            callQuestions();
+            remainingQuestions--;
             document.getElementById("remaining-questions").innerHTML = "Qestions remaining <br>" + remainingQuestions + "/5";
             let username = document.getElementById("username-input").value;
-            document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length
+            document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length;
 
-        })
-    })
+        });
+    });
 }
 
 /** 
@@ -125,14 +125,14 @@ function callQuestions() {
     if (currentQuestion >= questionList.length) {
         showHide('feedback-container');
         showHide('question-container');
-        showHide('reading-container')
+        showHide('reading-container');
         dispalyFinalImage();
         return;
     }
     function dispalyFinalImage() {
         let imageZero = document.getElementById("feedback-image-zero-marks");
-        let fullMarksImage = document.getElementById("feedback-image-full-marks")
-        let notBadImage = document.getElementById("feedback-image-not-bad")
+        let fullMarksImage = document.getElementById("feedback-image-full-marks");
+        let notBadImage = document.getElementById("feedback-image-not-bad");
 
         if (score <= 2) {
             imageZero.style.display = "block";
@@ -154,7 +154,7 @@ function callQuestions() {
  */
 
 function resetGame() {
-    document.location.reload()
+    document.location.reload();
 }
 
 /**
@@ -188,5 +188,5 @@ for (let i = 0; i < buttons.length; i++) {
  */
 
 function visitPage() {
-    window.location.href = "#header"
+    window.location.href = "#header";
 }
