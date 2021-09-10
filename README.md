@@ -61,8 +61,8 @@ This quiz is intended to be used by students who are studying English as a secon
 
 ## Testing
 ---
-* W3C Markup - 
-* W3C Markup - 
+* HTML - [https://validator.w3.org/](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/html-checked.jpg)
+* CSS - [https://jigsaw.w3.org/css-validator/](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/css-checked.jpg?raw=true)
 * JSHINT
 
 ### Testing User Stories from User Experience (UX) Section
