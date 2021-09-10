@@ -61,8 +61,8 @@ This quiz is intended to be used by students who are studying English as a secon
 
 ## Testing
 ---
-* W3C Markup - HTML
-* W3C Markup - CSS
+* W3C Markup - 
+* W3C Markup - 
 * JSHINT
 
 ### Testing User Stories from User Experience (UX) Section
@@ -70,8 +70,6 @@ This quiz is intended to be used by students who are studying English as a secon
     * The clean design and lack of navigation options allows the user to be led through the quiz.  There is nothing in the UI that could be construed as threatening.  There is no opportunity to deviate from the intended route through the quiz. First time users should have no problems with this quiz.
 * Returning Visitor
     * Returning visitors may skip the 'language description' screen by simply scrolling to the bottom and clicking the 'Start Quiz' button.  In future, perhaps an additional button could be displayed for returning users to bypass this screen, but forcing the user to at least skim through the notes is more beneficial for their quiz preparation.
-
-### Further Testing
 
 ### Known Bugs
 * At present, there are no known bugs
@@ -110,15 +108,6 @@ Adapted from - McCarthy, M. and O'Dell, F., 2017. **English Phrasal Verbs in Use
 
 ### Code
 All code was written by the developer.
-
-### Content
-Adapted from Phrasal Verbs in Use (link)
-
-### Media
-Logo property of developer
-Feedback Image 1
-Feedback Image 2
-Feedback Image 3
 
 ## Acknowledgements
 * My mentor for the feedback and advice
