@@ -77,6 +77,23 @@ This quiz is intended to be used by students who are studying English as a secon
 * At present, there are no known bugs
 ## Credits
 
+### Images
+* Logo - Developer's own image
+
+* Feedback Images:
+
+![Nodding Dog](assets/images/not-bad-dog.gif)
+https://tenor.com/view/not-bad-dog-cute-nod-gif-17125636
+
+![I'm sorry](assets/images/im-sorry.gif)
+https://tenor.com/view/im-sorry-gif-9154276
+
+![Rosycheeks Approved](assets/images/rosycheeks-approved.gif)
+https://tenor.com/view/rosycheeks-approved-i-approve-well-done-good-job-gif-16996150
+
+### Content
+Adapted from - McCarthy, M. and O'Dell, F., 2017. **English Phrasal Verbs in Use**. *Cambridge University Press*
+
 ### Code
 All code was written by the developer.
 
