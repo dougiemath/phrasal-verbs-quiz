@@ -371,9 +371,6 @@ hr{
 }
 
 /*Element IDs for JS Functions*/
-#username-container{
-    display: block;
-}
 
 #feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
     display: none;
@@ -382,15 +379,3 @@ hr{
 .hide{
     display: none;
 }
-
-/*
-#language-point-container{
-    display: none;
-} 
-#question-container, #feedback-container, #answers-container, #feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
-    display:none;
-}
-
-#reading-container{
-    display: none;
-}*/
