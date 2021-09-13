@@ -63,14 +63,16 @@ document.getElementById("username-input").addEventListener("keydown", function (
  * Reusable function to show and hide divs 
  */
 
-function showHide(target) {
-    let targetContainer = document.getElementById(target);
-    if (targetContainer.style.display === "none") {
-        targetContainer.style.display = "block";
+function showHide(target){
+    let targetContainer = document.getElementById(target)
+
+    if (targetContainer.classList.contains('hide')){
+        targetContainer.classList.remove('hide')
     } else {
-        targetContainer.style.display = "none";
+        targetContainer.classList.add('hide')
     }
 }
+
 /**
  * function to display start message
  */
