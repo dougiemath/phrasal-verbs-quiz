@@ -375,6 +375,15 @@ hr{
     display: block;
 }
 
+#feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+/*
 #language-point-container{
     display: none;
 } 
@@ -384,4 +393,4 @@ hr{
 
 #reading-container{
     display: none;
-}
+}*/
