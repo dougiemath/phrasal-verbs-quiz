@@ -12,7 +12,6 @@ body{
 }
 
 .container{
-    display: block;
     align-items: center;
     margin-top: 1.5%;
     width: 80%;
@@ -366,14 +365,10 @@ hr{
 #username-container{
     display: block;
 }
-
-#language-point-container{
-    display: none;
-} 
-#question-container, #feedback-container, #answers-container, #feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
+/*
+#reading-container,#language-point-container, #question-container, #feedback-container, #answers-container, #feedback-image-zero-marks, #feedback-image-full-marks, #feedback-image-not-bad{
     display:none;
 }
-
-#reading-container{
+.hide{
     display: none;
-}
+}*/
