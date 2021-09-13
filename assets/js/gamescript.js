@@ -76,11 +76,17 @@ function showHide(target) {
  */
 
 function displayStartMessage() {
-    showHide('language-point-container'); 
-    showHide('username-container');
     let username = document.getElementById("username-input").value;
-    document.getElementById("instructions-message").textContent = "Hi " + username + ", before you start the exercise, please read the language point below.";
-    document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!";
+    if(username){
+        console.log(username)
+    } else {
+        console.log("error")
+    }
+    //showHide('language-point-container'); 
+    //showHide('username-container');
+    
+    //document.getElementById("instructions-message").textContent = "Hi " + username + ", before you start the exercise, please read the language point below.";
+    //document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!";
 }
 
 /**
