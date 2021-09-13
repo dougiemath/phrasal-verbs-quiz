@@ -196,3 +196,9 @@ for (let i = 0; i < buttons.length; i++) {
 function visitPage() {
     window.location.href = "#header";
 }
+
+function showAnswers(){
+    visitPage(); 
+    showHide('answers-container'); 
+    showHide('feedback-container')
+}
