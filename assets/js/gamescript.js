@@ -78,16 +78,16 @@ function showHide(target) {
 function displayStartMessage() {
     let username = document.getElementById("username-input").value;
     if(username){
-        console.log(username)
+        showHide('language-point-container'); 
+        showHide('username-container');
+        document.getElementById("instructions-message").textContent = "Hi " + username + ", before you start the exercise, please read the language point below.";
+        document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!";
+
     } else {
         console.log("error")
+        document.getElementById("error-message").innerHTML = "Please enter a username."
     }
-    //showHide('language-point-container'); 
-    //showHide('username-container');
-    
-    //document.getElementById("instructions-message").textContent = "Hi " + username + ", before you start the exercise, please read the language point below.";
-    //document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!";
-}
+  }
 
 /**
  * function to startGame
