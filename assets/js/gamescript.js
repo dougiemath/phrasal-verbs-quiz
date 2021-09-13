@@ -56,8 +56,6 @@ document.getElementById("username-input").focus();
 document.getElementById("username-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         displayStartMessage();
-        showHide('language-point-container');
-        showHide('username-container');
     }
 });
 
