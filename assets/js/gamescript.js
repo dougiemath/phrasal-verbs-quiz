@@ -84,7 +84,6 @@ function displayStartMessage() {
         document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!";
 
     } else {
-        console.log("error")
         document.getElementById("error-message").innerHTML = "Please enter a username."
     }
   }

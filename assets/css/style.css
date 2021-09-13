@@ -75,26 +75,6 @@ body{
     width: 80%;
 }
 
-.enter-username{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
-}
-
-#username-input{
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    height: 2rem;
-    padding-left: 1%;
-    border-bottom: solid black 0.5px;
-}
-
-.username-break{
-    display: none;
-}
-
 /* media query for header */
 
 @media only screen and (max-width: 480px) {
@@ -130,6 +110,34 @@ body{
         font-size: 1.5rem;
     }
 }
+
+/*Username Section*/
+
+.enter-username{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#username-input{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    height: 2rem;
+    padding-left: 1%;
+    border-bottom: solid black 0.5px;
+}
+
+.username-break{
+    display: none;
+}
+
+#error-message{
+    color: rgba(255, 0, 0);
+    font-style: italic;
+}
+
 
 /*Language Points*/
 
