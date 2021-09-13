@@ -2,13 +2,13 @@
 Images
 
 ## Project Overview
----
+
 Skye Online English (https://www.skyeonlineenglish.com/) is an online English-langauge teaching website which is owned by the developer of this project. 
 
 This quiz is intended to be used by students who are studying English as a second language with a focus on phrasal verbs containing the preposition 'DOWN'.
 
 ## User Experience (UX)
---- 
+ 
 ### User Stories
 * First Time Visitor
     * I want to easily understand what the page is about.
@@ -38,12 +38,12 @@ This quiz is intended to be used by students who are studying English as a secon
 #### Mobile View
 
 ## Features
----
+
 * Responsive on all device sizes
 * Interactive elements
 
 ## Technologies Used
----
+
 ### Languages Used
 * HTML
 * CSS
@@ -60,7 +60,7 @@ This quiz is intended to be used by students who are studying English as a secon
     * Visual Studio Code was practise and develop the different sections of the quz before inseerting it into Git.
 
 ## Testing
----
+
 * HTML - [https://validator.w3.org/](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/html-checked.jpg)
 * CSS - [https://jigsaw.w3.org/css-validator/](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/css-checked.jpg?raw=true)
 * JSHINT
@@ -75,7 +75,7 @@ This quiz is intended to be used by students who are studying English as a secon
 * At present, there are no known bugs
 
 ## Deployment
----
+
 ### GitHub Pages
 
 The project was deployed to GitHub Pages using the following steps...
@@ -88,7 +88,7 @@ The project was deployed to GitHub Pages using the following steps...
 6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
 ## Credits
----
+
 ### Images
 * Logo - Developer's own image
 
