@@ -76,23 +76,26 @@ When students are learning new language, it is important for them to consolidate
 * Returning Visitor
     * Returning visitors may skip the 'language description' screen by simply scrolling to the bottom and clicking the 'Start Quiz' button.  In future, perhaps an additional button could be displayed for returning users to bypass this screen, but forcing the user to at least skim through the notes is more beneficial for their quiz preparation.
 
+### Other testing
+* While testing, it was noted that users could begin the quiz without entering a username, thus accessing the quiz's full functionality.  A function with an if statement was added to prevent the game starting if the username is blank.
+
 ### Known Bugs
 * At present, there are no known bugs
 
 * During development these bugs were discovered and resolved
-    #### Bug
+    #### Bug 1
     * When restarting the game, it was noted that instead of the questions progressing 1-2-3-4-5, the questions progressed 1-3-5.
     #### Cause
     * I was unable to identify the reason for this
     #### Solution
     * A function to reload the page content from the cache (clearing everything) was implemented in order for the user to begin the quiz from scratch.
 
-    #### Bug
+    #### Bug 2
     * showHide function required CSS to be added directly to HTML
     #### Cause
     * Unsure exactly why the issue was caused, but there were multiple 'display: none;' for each div.
     #### Solution
-    * a class ('hide') with a display value of 'none' was added to each div.  The showHide function was changed to either 'add' or 'remove' the class to the div.
+    * A class ('hide') with a display value of 'none' was added to each div.  The showHide function was changed to either 'add' or 'remove' the class to the div.
 
 ## Deployment
 
