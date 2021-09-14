@@ -39,8 +39,11 @@ When students are learning new language, it is important for them to consolidate
 
 ### Wireframes 
 #### Computer View
+![Desktop View](assets/images/screenshots-for-readme/wireframes/desktop-wireframe.jpg)
 #### Tablet View
+![Tablet View](assets/images/screenshots-for-readme/wireframes/tablet-wireframe.jpg)
 #### Mobile View
+![Mobile View](assets/images/screenshots-for-readme/wireframes/mobile-wireframe.jpg)
 
 ## Features
 
