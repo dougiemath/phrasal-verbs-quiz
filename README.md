@@ -15,22 +15,24 @@ Skye Online English (https://www.skyeonlineenglish.com/) is an online English-la
 
 This quiz is intended to be used by students who are studying English as a second language with a focus on phrasal verbs containing the preposition 'DOWN'.
 
-When students are learning new language, it is important for them to consolidate their knowledge by doing contextualised exercises - prior to using the langauge in 'free' exercises - such as open discussions.  This is designed for the sel-study student to be introduced to, and be given the opportunity to consolidate phrasal verbs with 'down' befoore attempting to use them freely.
+When students are learning new language, it is important for them to consolidate their knowledge by doing contextualised exercises - prior to using the langauge in 'free' exercises - such as open discussions.  This is designed for the self-study student to be introduced to, and be given the opportunity to consolidate phrasal verbs with 'down' befoore attempting to use them freely.
+
+It follows the standard EFL teaching method of 'Present, Practise, Produce (PPP)', with the target langauge being presented int he form of a written language description, and then parctised in a quiz format.  Production would then take place in a classroom or social environemnt.
 
 ## User Experience (UX)
  
 ### User Stories
 * First Time Visitor
-    * I want to easily understand what the page is about.
-    * I want to be able to navigate through the quiz as easily as possible
+    * As a user, I want to easily understand what the page is about.
+    * As a user, I want to be able to navigate through the quiz as easily as possible.
 * Returning Visitor
-    * I want to be able to redo the quiz to check my understanding after I check the answers easily
+    * As a user, I want to be able to redo the quiz to check my understanding after I check the answers easily.
 * Frequent Visitor
     * This is not going to be visited frequently, however the template may be duplicated for frequent users to be comfortable doing other quizes using the same format.
 
 ### Design
 * Colour Scheme
-    * The parent website (https://www.skyeonlineenglish.com/) uses a limited number of colours with the main background colour being grey.  It was chosen to give it a more professional / corporate feel.  The quiz is designed to be more enjoyable but remaining within the confines of the parent site's colour scheme.  Therefore three principle colours were chosen:
+    * The parent website [Skye Online English](https://www.skyeonlineenglish.com/) uses a limited number of colours with the main background colour being grey.  It was chosen to give it a more professional / corporate feel.  The quiz is designed to be more enjoyable but remaining within the confines of the parent site's colour scheme.  Therefore three principle colours were chosen:
         * Background: #b877a9 - rgb(184,119,169) - Purple - used in Skye Online English's logo
         * Key Text: #0cad95 - rgb(12,173,149) - Green - used in Skye Online English's logo
         * Text Backgrounds: #ffffff - rgb(255, 255, 255) - white
@@ -38,9 +40,9 @@ When students are learning new language, it is important for them to consolidate
 * Typography
     * The 'Lato' and 'Source Sans Pro' fonts (from Google Fonts) were used as a tthe main fonts throughout as they are both clean and easy to read.
     * Key langauge (including the quiz title) color:  #0cad95 - rgb(12,173,149) - Green
-    I felt that this color stood out against the background and kept within the color scheme of the company's branding.
+        * I felt that this color stood out against the background and kept within the color scheme of the company's branding.
     * Error message color: #FF0000 - rgb(255, 0, 0) - Red
-    In order to make it apparant that an error has occurred, this seemed like a logical choice. 
+        * In order to make it apparant that an error has occurred, this seemed like a logical choice. 
 
 * Imagery
     * As the nature of the quiz is language based there is very little imagery used.  Images were reserved for the 'Final Score' section as a means of adding enjoyment to the quiz.
@@ -56,7 +58,25 @@ When students are learning new language, it is important for them to consolidate
 ## Features
 
 * Responsive on all device sizes
-* Interactive elements
+
+### Screen by screen
+
+![Username Screen](assets/images/screenshots-for-readme/features/welcome-screen-with-error.jpg)
+* On this screen the user is asked to enter a username.  The quiz will not progress if the username field is empty and an error message will appear. Clicking the 'submit' button will ide this screen and display the next.
+
+
+![Language Point Screen](assets/images/screenshots-for-readme/features/langauge-point-screen.jpg)
+* On this screen the user is presented with the target language.  The button at the bottom of the screen will hide the language points and display the question screen.
+
+![Questions Screen](assets/images/screenshots-for-readme/features/question-screen-with-score-counters.jpg)
+* On this screen the user is asked questions about the target language.  The quiz cycles automatically and, on completeing the last question, will hide the question screen and display the fnal score.
+
+![Final Score](assets/images/screenshots-for-readme/features/final-score-screen.jpg)
+* On this screen the username will be displayed, plus the total score out of 5.  Depending on the final score, one of three images will appear. 
+* There are two buttons at the bottom, one will restart the quiz and the other will display the answers.  Both will hide the current screen.
+
+![Answers](assets/images/screenshots-for-readme/features/answers-screen.jpg)
+* On this screen will be the answers to the quiz.  At the bottom will be a button that will restart the quiz.
 
 ## Technologies Used
 
