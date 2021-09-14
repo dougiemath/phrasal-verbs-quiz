@@ -7,6 +7,8 @@ Skye Online English (https://www.skyeonlineenglish.com/) is an online English-la
 
 This quiz is intended to be used by students who are studying English as a second language with a focus on phrasal verbs containing the preposition 'DOWN'.
 
+When students are learning new language, it is important for them to consolidate their knowledge by doing contextualised exercises - prior to using the langauge in 'free' exercises - such as open discussions.  This is designed for the sel-study student to be introduced to, and be given the opportunity to consolidate phrasal verbs with 'down' befoore attempting to use them freely.
+
 ## User Experience (UX)
  
 ### User Stories
@@ -23,14 +25,17 @@ This quiz is intended to be used by students who are studying English as a secon
     * The parent website (https://www.skyeonlineenglish.com/) uses a limited number of colours with the main background colour being grey.  It was chosen to give it a more professional / corporate feel.  The quiz is designed to be more enjoyable but remaining within the confines of the parent site's colour scheme.  Therefore three principle colours were chosen:
         * Background: #b877a9 - rgb(184,119,169) - Purple - used in Skye Online English's logo
         * Key Text: #0cad95 - rgb(12,173,149) - Green - used in Skye Online English's logo
-        * Text Backgrounds: White
+        * Text Backgrounds: #ffffff - rgb(255, 255, 255) - white
 
 * Typography
     * The 'Lato' and 'Source Sans Pro' fonts (from Google Fonts) were used as a tthe main fonts throughout as they are both clean and easy to read.
-    * Key langauge (including the quiz title) was written in #b8877a9 so that it stands out against the white background and black text
+    * Key langauge (including the quiz title) color:  #0cad95 - rgb(12,173,149) - Green
+    I felt that this color stood out against the background and kept within the color scheme of the company's branding.
+    * Error message color: #FF0000 - rgb(255, 0, 0) - Red
+    In order to make it apparant that an error has occurred, this seemed like a logical choice. 
 
 * Imagery
-    * As the nature of the quiz is lannguage based there is very little imagery used.  Images were reserved for the 'Final Score' section as a means of adding enjoyment to the quiz.
+    * As the nature of the quiz is language based there is very little imagery used.  Images were reserved for the 'Final Score' section as a means of adding enjoyment to the quiz.
 
 ### Wireframes 
 #### Computer View
@@ -73,6 +78,21 @@ This quiz is intended to be used by students who are studying English as a secon
 
 ### Known Bugs
 * At present, there are no known bugs
+
+* During development these bugs were discovered and resolved
+    #### Bug
+    * When restarting the game, it was noted that instead of the questions progressing 1-2-3-4-5, the questions progressed 1-3-5.
+    #### Cause
+    * I was unable to identify the reason for this
+    #### Solution
+    * A function to reload the page content from the cache (clearing everything) was implemented in order for the user to begin the quiz from scratch.
+
+    #### Bug
+    * showHide function required CSS to be added directly to HTML
+    #### Cause
+    * Unsure exactly why the issue was caused, but there were multiple 'display: none;' for each div.
+    #### Solution
+    * a class ('hide') with a display value of 'none' was added to each div.  The showHide function was changed to either 'add' or 'remove' the class to the div.
 
 ## Deployment
 
