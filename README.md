@@ -1,5 +1,13 @@
 # Phrasal Verbs Quiz
-Images
+
+## Screenshots
+
+### Desktop
+![Desktop View](assets/images/screenshots-for-readme/desktop-view-in-desktop.png)
+### Tablet
+![Tablet View](assets/images/screenshots-for-readme/tablet-view-in-tablet.png)
+### Mobile
+![Mobile View](assets/images/screenshots-for-readme/mobile-view-in-phone.png)
 
 ## Project Overview
 
