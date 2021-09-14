@@ -153,14 +153,11 @@ The project was deployed to GitHub Pages using the following steps...
 
 * Feedback Images:
 
-![Nodding Dog](assets/images/not-bad-dog.gif)
-https://tenor.com/view/not-bad-dog-cute-nod-gif-17125636
+[Nodding Dog](assets/images/not-bad-dog.gif) - https://tenor.com/view/not-bad-dog-cute-nod-gif-17125636
 
-![I'm sorry](assets/images/im-sorry.gif)
-https://tenor.com/view/im-sorry-gif-9154276
+[I'm sorry](assets/images/im-sorry.gif) - https://tenor.com/view/im-sorry-gif-9154276
 
-![Rosycheeks Approved](assets/images/rosycheeks-approved.gif)
-https://tenor.com/view/rosycheeks-approved-i-approve-well-done-good-job-gif-16996150
+[Rosycheeks Approved](assets/images/rosycheeks-approved.gif) - https://tenor.com/view/rosycheeks-approved-i-approve-well-done-good-job-gif-16996150
 
 ### Content
 Adapted from - McCarthy, M. and O'Dell, F., 2017. **English Phrasal Verbs in Use**. *Cambridge University Press*
