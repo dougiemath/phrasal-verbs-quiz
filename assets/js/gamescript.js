@@ -64,12 +64,12 @@ document.getElementById("username-input").addEventListener("keydown", function (
  */
 
 function showHide(target){
-    let targetContainer = document.getElementById(target)
+    let targetContainer = document.getElementById(target);
 
     if (targetContainer.classList.contains('hide')){
-        targetContainer.classList.remove('hide')
+        targetContainer.classList.remove('hide');
     } else {
-        targetContainer.classList.add('hide')
+        targetContainer.classList.add('hide');
     }
 }
 
@@ -86,7 +86,7 @@ function displayStartMessage() {
         document.getElementById("ready-message").textContent = "If you are ready, " + username + ", you can click the button to start the exercise!";
 
     } else {
-        document.getElementById("error-message").innerHTML = "Please enter a username."
+        document.getElementById("error-message").innerHTML = "Please enter a username.";
     }
   }
 
@@ -98,7 +98,7 @@ function startGame() {
     showHide('language-point-container'); 
     showHide('reading-container'); 
     showHide('question-container'); 
-    visitPage()
+    visitPage();
     score = 0;
     currentQuestion = -1;
     callQuestions();
@@ -202,8 +202,12 @@ function visitPage() {
     window.location.href = "#header";
 }
 
+/**
+ * function to display answers
+ */
+
 function showAnswers(){
     visitPage(); 
     showHide('answers-container'); 
-    showHide('feedback-container')
+    showHide('feedback-container');
 }

@@ -97,9 +97,14 @@ It follows the standard EFL teaching method of 'Present, Practise, Produce (PPP)
 
 ## Testing
 
-* HTML - [https://validator.w3.org/](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/html-checked.jpg)
-* CSS - [https://jigsaw.w3.org/css-validator/](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/css-checked.jpg?raw=true)
-* JSHINT
+* HTML - [validator.w3.org](https://validator.w3.org/)
+    * [Screenshot of results](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/html-checked.jpg)
+* CSS - [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
+    * [Screenshot of Results](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/css-checked.jpg?raw=true)
+* JSHINT [jshint.com](https://jshint.com/)
+    * [Screenshot of Results 1](assets/images/screenshots-for-readme/jshint-1.jpg)
+    * [Screenshot of Results 2](assets/images/screenshots-for-readme/jshint-2.jpg)
+    * [Screenshot of Results 3](assets/images/screenshots-for-readme/jshint-3.jpg)
 
 ### Testing User Stories from User Experience (UX) Section
 * First Time Visitor
