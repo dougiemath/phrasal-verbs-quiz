@@ -95,7 +95,7 @@ It follows the standard EFL teaching method of 'Present, Practise, Produce (PPP)
 * CSS - [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
     * [Screenshot of Results](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/css-checked.jpg?raw=true)
 * JSHINT [jshint.com](https://jshint.com/)
-    * [Screenshot of Results](assets/images/screenshots-for-readme/jshint.jpg)
+    * [Screenshot of Results]()
 
 
 ### Testing User Stories from User Experience (UX) Section
