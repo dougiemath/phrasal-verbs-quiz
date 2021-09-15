@@ -1,13 +1,6 @@
 # Phrasal Verbs Quiz
 
-## Screenshots
-
-### Desktop
-![Desktop View](assets/images/screenshots-for-readme/desktop-view-in-desktop.png)
-### Tablet
-![Tablet View](assets/images/screenshots-for-readme/tablet-view-in-tablet.png)
-### Mobile
-![Mobile View](assets/images/screenshots-for-readme/mobile-view-in-phone.png)
+![Screenshot in all devices](assets/images/screenshots-for-readme/all-devices.png)
 
 ## Project Overview
 
@@ -102,9 +95,8 @@ It follows the standard EFL teaching method of 'Present, Practise, Produce (PPP)
 * CSS - [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
     * [Screenshot of Results](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/css-checked.jpg?raw=true)
 * JSHINT [jshint.com](https://jshint.com/)
-    * [Screenshot of Results 1](assets/images/screenshots-for-readme/jshint-1.jpg)
-    * [Screenshot of Results 2](assets/images/screenshots-for-readme/jshint-2.jpg)
-    * [Screenshot of Results 3](assets/images/screenshots-for-readme/jshint-3.jpg)
+    * [Screenshot of Results](assets/images/screenshots-for-readme/jshint.jpg)
+
 
 ### Testing User Stories from User Experience (UX) Section
 * First Time Visitor
