@@ -52,22 +52,24 @@ It follows the standard EFL teaching method of 'Present, Practise, Produce (PPP)
 
 * Responsive on all device sizes
 
-### Screen by screen
-
+### Username Input/Welcome Screen:
 ![Username Screen](assets/images/screenshots-for-readme/features/welcome-screen-with-error.jpg)
 * On this screen the user is asked to enter a username.  The quiz will not progress if the username field is empty and an error message will appear. Clicking the 'submit' button will ide this screen and display the next.
 
-
+### Language Points:
 ![Language Point Screen](assets/images/screenshots-for-readme/features/langauge-point-screen.jpg)
 * On this screen the user is presented with the target language.  The button at the bottom of the screen will hide the language points and display the question screen.
 
+### Questions:
 ![Questions Screen](assets/images/screenshots-for-readme/features/question-screen-with-score-counters.jpg)
 * On this screen the user is asked questions about the target language.  The quiz cycles automatically and, on completeing the last question, will hide the question screen and display the fnal score.
 
+### Final Score:
 ![Final Score](assets/images/screenshots-for-readme/features/final-score-screen.jpg)
 * On this screen the username will be displayed, plus the total score out of 5.  Depending on the final score, one of three images will appear. 
 * There are two buttons at the bottom, one will restart the quiz and the other will display the answers.  Both will hide the current screen.
 
+### Answers:
 ![Answers](assets/images/screenshots-for-readme/features/answers-screen.jpg)
 * On this screen will be the answers to the quiz.  At the bottom will be a button that will restart the quiz.
 
@@ -95,7 +97,7 @@ It follows the standard EFL teaching method of 'Present, Practise, Produce (PPP)
 * CSS - [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
     * [Screenshot of Results](https://github.com/dougiemath/phrasal-verbs-quiz/blob/main/assets/images/css-checked.jpg?raw=true)
 * JSHINT [jshint.com](https://jshint.com/)
-    * [Screenshot of Results]()
+    * [Screenshot of Results](assets/images/screenshots-for-readme/jshint.jpg)
 
 
 ### Testing User Stories from User Experience (UX) Section
